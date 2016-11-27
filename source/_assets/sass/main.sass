@@ -1,0 +1,42 @@
+
+// This effectively slims the site for most browsers.
+//$widescreen: 9999px
+
+$primary: #4AB3C1
+$warning: #EFA856
+
+@import "../../../node_modules/bulma/bulma"
+
+.things-built .card
+	width: auto
+
+.profile-image img
+	width: 175px
+	margin: auto
+	border-radius: 50%
+
+.hero .hero-title
+	text-align: center
+	margin-bottom: 50px
+	&:after
+		content: ""
+		display: block
+		width: 60%
+		margin: 15px auto 0 auto
+		border: 1px solid
+		border-top: 0
+		opacity: .3
+
+.hero.is-primary .box,
+	color: $dark
+	.title
+		color: $dark
+	.subtitle
+		color: $dark
+
+.is-primary .content
+	color: $white
+	p
+		color: $white
+	h2 
+		color: $white
